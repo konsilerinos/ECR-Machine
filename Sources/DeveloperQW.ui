@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeveloperQW</class>
+ <widget class="QWidget" name="DeveloperQW">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>261</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>571</width>
+    <height>261</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>571</width>
+    <height>261</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Разработчик</string>
+  </property>
+  <widget class="QLineEdit" name="gitHubLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>110</y>
+     <width>451</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#gitHubLineEdit {
+
+	border: 2px solid #333533;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="text1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#text1 {
+
+	border: 2px solid #242423;
+	color: #242423;
+}</string>
+   </property>
+   <property name="text">
+    <string>ФИО</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="mailLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>160</y>
+     <width>451</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#mailLineEdit {
+
+	border: 2px solid #333533;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="enterButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>210</y>
+     <width>551</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#enterButton {
+
+	background-color: #284B63;
+	border: 2px solid #333533;
+	color: #FFFFFF;
+}
+
+QPushButton#enterButton:hover {
+
+	background-color: #FFFFFF;
+	color: #333533;
+}
+
+QPushButton#enterButton:pressed {
+
+	background-color: #F5CB5C;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Принять</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="text3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#text3 {
+
+	border: 2px solid #242423;
+	color: #242423;
+}</string>
+   </property>
+   <property name="text">
+    <string>Почта</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="fioLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>60</y>
+     <width>451</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#fioLineEdit {
+
+	border: 2px solid #333533;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="helpHead">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>551</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#helpHead {
+
+	background-color: #F5CB5C;
+	border: 2px solid #242423;
+	color: #242423;
+}</string>
+   </property>
+   <property name="text">
+    <string>Разработчик</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="text2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#text2 {
+
+	border: 2px solid #242423;
+	color: #242423;
+}</string>
+   </property>
+   <property name="text">
+    <string>GitHub</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

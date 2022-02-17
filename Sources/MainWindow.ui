@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1091</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1091</width>
+    <height>641</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1091</width>
+    <height>641</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Шифровальная машина</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="logLabel">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>821</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#logLabel {
+
+	background-color: #F5CB5C;
+	border: 2px solid #242423;
+	color: #242423;
+}</string>
+    </property>
+    <property name="text">
+     <string>Лог</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="instructionLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#instructionLabel {
+
+	background-color: #F5CB5C;
+	border: 2px solid #242423;
+	color: #242423;
+}</string>
+    </property>
+    <property name="text">
+     <string>Инструкции</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="developerButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>460</y>
+      <width>241</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#developerButton {
+
+	border: 2px solid #242423;
+	background-image: url(:/Resources/DeveloperButton.png);
+}
+
+QPushButton#developerButton:hover {
+
+	border: 2px solid #242423;
+}
+
+QPushButton#developerButton:pressed {
+
+	border: 2px solid #242423;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="enterButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#enterButton {
+
+	background-color: #284B63;
+	border: 2px solid #333533;
+	color: #FFFFFF;
+}
+
+QPushButton#enterButton:hover {
+
+	background-color: #FFFFFF;
+	color: #333533;
+}
+
+QPushButton#enterButton:pressed {
+
+	background-color: #F5CB5C;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Запуск</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="logTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>60</y>
+      <width>821</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit#logTextEdit {
+
+	border: 2px solid #1A3344;
+}</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="encryptionBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>241</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Режим</string>
+    </property>
+    <widget class="QRadioButton" name="encryptionRB">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Шифрование</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="decryptionRB">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Дешифрование</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="fileInfoRB">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Информация для файла</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="keyGenerationRB">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Генерация ключа</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>241</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Файлы</string>
+    </property>
+    <widget class="QTextEdit" name="file1NameText">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit#file1NameText {
+
+	border: 2px solid #1A3344;
+}</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="file2NameText">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit#file2NameText {
+
+	border: 2px solid #1A3344;
+}</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="keyFileNameText">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit#keyFileNameText {
+
+	border: 2px solid #1A3344;
+}</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>241</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Шифрование</string>
+    </property>
+    <widget class="QRadioButton" name="easyReplacementRB">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Простая замена</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="verticalPermutationRB">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Вертикальная перестановка</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
